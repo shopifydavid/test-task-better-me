@@ -260,6 +260,10 @@
       <link rel="preload" as="font" href="{{ settings.type_header_font | font_url }}" type="font/woff2" crossorigin>
     {%- endunless -%}
 
+    {% comment %} For Product presentation section {% endcomment %}
+    <link rel="preload" href="{{ 'Gilroy-SemiBold.woff2' | asset_url }}" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="{{ 'Inter-SemiBold.woff2' | asset_url }}" as="font" type="font/woff2" crossorigin>
+
     {%- if localization.available_countries.size > 1 or localization.available_languages.size > 1 -%}
       {{ 'component-localization-form.css' | asset_url | stylesheet_tag: preload: true }}
       <script src="{{ 'localization-form.js' | asset_url }}" defer="defer"></script>
@@ -348,5 +352,21 @@
     {%- if settings.predictive_search_enabled -%}
       <script src="{{ 'predictive-search.js' | asset_url }}" defer="defer"></script>
     {%- endif -%}
+    <style>
+      @font-face {
+        font-family: 'Gilroy';
+        font-style: normal;
+        font-weight: 600;
+        src: url('{{ 'Gilroy-SemiBold.woff2' | asset_url }}') format('woff2');
+        font_display: 'swap';
+      }
+      @font-face {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 600;
+        src: url('{{ 'Inter-SemiBold.woff2' | asset_url }}') format('woff2');
+        font_display: 'swap';
+      }
+    </style>
   </body>
 </html>
