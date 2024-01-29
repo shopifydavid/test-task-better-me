@@ -39,6 +39,56 @@
         "show_text_below": false
       }
     },
+    "product_presentation_LFHJRT": {
+      "type": "product-presentation",
+      "blocks": {
+        "product_presentation_phCgTH": {
+          "type": "product-presentation",
+          "settings": {
+            "title": "Elevating wellness,<br>beat by beat",
+            "icon": "shopify:\/\/shop_images\/heart_32.png",
+            "image": "shopify:\/\/shop_images\/Band.png",
+            "image_height": 230,
+            "image_height_mobile": 110,
+            "background": "shopify:\/\/shop_images\/Group_1484578582_f4ddd35f-49e7-4b3d-a574-49db0bfbbaf5.png",
+            "background_width": "full",
+            "show_popup": false,
+            "popup_title": "Heart Tracker",
+            "popup_subtitle": "Crack the code to better sleep with monthly goals, insightful highlights, and real-time heart tracking."
+          }
+        },
+        "product_presentation_D7qBCW": {
+          "type": "product-presentation",
+          "settings": {
+            "title": "Uncover the power of rest and all-day energy",
+            "icon": "shopify:\/\/shop_images\/night_32.png",
+            "image": "shopify:\/\/shop_images\/Band_5066edf4-fcd6-4751-8b54-57f85562eeb2.png",
+            "image_height": 230,
+            "image_height_mobile": 110,
+            "background": "shopify:\/\/shop_images\/Group_1484578583.png",
+            "background_width": "square",
+            "show_popup": true,
+            "popup_title": "Sleep Tracker",
+            "popup_subtitle": "Crack the code to better sleep with monthly goals, insightful highlights, and real-time sleep tracking.",
+            "popup_image": "shopify:\/\/shop_images\/Deep_Purple.jpg",
+            "popup_image_mobile": "shopify:\/\/shop_images\/sleep-score.png"
+          }
+        }
+      },
+      "block_order": [
+        "product_presentation_phCgTH",
+        "product_presentation_D7qBCW"
+      ],
+      "settings": {
+        "heading": "BetterMe Band:<br>The power of metrics",
+        "margin_top": 0,
+        "margin_top_mobile": 0,
+        "padding_top": 80,
+        "padding_bottom": 80,
+        "padding_top_mobile": 40,
+        "padding_bottom_mobile": 40
+      }
+    },
     "featured_collection": {
       "type": "featured-collection",
       "settings": {
@@ -70,6 +120,7 @@
   },
   "order": [
     "image_banner",
+    "product_presentation_LFHJRT",
     "featured_collection"
   ]
 }
