@@ -1,5 +1,56 @@
-.product-presentation * {
-    font-family: 'Gilroy', open-sans;
-    font-weight: 600;
-    font-style: normal;
+/* Variables */
+.product-presentation {
+  --font-family: 'Gilroy', open-sans;
+  --font-weight: 600;
+  --font-style: normal;
+  --line-height: 1;
+}
+.product-presentation, .product-presentation * {
+  font-family: var(--font-family);
+  font-weight: var(--font-weight);
+  font-style: var(--font-style);
+  line-height: var(--line-height);
+}
+.product-presentation__title {
+  font-size: 72px;
+  letter-spacing: -0.03em;
+  margin-top: 0;
+  margin-bottom: 80px;
+}
+
+.presentation-card {
+  position: relative;
+}
+
+.presentation-card__head {
+  padding: 40px;
+  box-sizing: 164px;
+  height: 164px;
+}
+.presentation-card__icon {
+  height: 48px;
+  width: 48px;
+  object-fit: contain;
+  object-position: center;
+}
+.presentation-card__title {
+  font-size: 48px;
+  letter-spacing: -0.03em;
+  margin: 0;
+}
+.presentation-card__bottom {
+  position: relative;
+  height: 566px;
+}
+.presentation-card__bottom:before {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-position: center bottom;
+  background-repeat: no-repeat no-repeat;
+  background-size: cover;
+  height: 56%;
+  width: 100%;
 }
