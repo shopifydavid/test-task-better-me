@@ -1,0 +1,198 @@
+{{ 'bootstrap-grid.css' | asset_url | stylesheet_tag }}
+{{ 'product-presentation.css' | asset_url | stylesheet_tag }}
+
+
+{% schema %}
+{
+  "name": "Product presentation",
+  "blocks": [
+    {
+      "type": "product-presentation",
+      "name": "Product",
+      "settings": [
+        {
+          "type": "header",
+          "content": "Block Settings"
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "default": "Name",
+          "label": "Card title"
+        },        
+        {
+          "type": "image_picker",
+          "id": "icon",
+          "label": "Icon",
+          "info": "Recommended ratio is 32x32 pixels"
+        },        
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Featured Image"
+        },    
+        {
+          "type": "range",
+          "id": "image_height",
+          "min": 180,
+          "max": 300,
+          "step": 5,
+          "unit": "px",
+          "label": "Image height on Desktop",
+          "default": 230
+        },     
+        {
+          "type": "range",
+          "id": "image_height_mobile",
+          "min": 80,
+          "max": 150,
+          "step": 5,
+          "unit": "px",
+          "label": "Image height on Mobile",
+          "default": 110
+        },    
+        {
+          "type": "image_picker",
+          "id": "background",
+          "label": "Background Image"
+        },
+        {
+          "type": "select",
+          "id": "background_width",
+          "label": "Background ratio",
+          "info": "Square ≈ 365px x 365px on Desktop | Full width - height: auto ",
+          "options": [
+            {
+              "value": "full",
+              "label": "Full width"
+            },
+            {
+              "value": "square",
+              "label": "Square"
+            }
+          ],
+          "default": "full"
+        },
+        {
+          "type": "header",
+          "content": "Popup Settings"
+        },
+        {
+          "type": "checkbox",
+          "id": "show_popup",
+          "label": "Show popup with additional content",
+          "default": true
+        },
+        {
+          "type": "text",
+          "id": "popup_title",
+          "label": "Popup title",
+          "default": "Popup title"
+        }, 
+        {
+          "type": "text",
+          "id": "popup_subtitle",
+          "label": "Popup subtitle",
+          "default": "Popup subtitle"
+        }, 
+        {
+          "type": "image_picker",
+          "id": "popup_image",
+          "label": "Popup Image"
+        }, 
+        {
+          "type": "image_picker",
+          "id": "popup_image_mobile",
+          "label": "Popup Image on Mobile",
+          "info": "Recommended ratio 3x4"
+        }
+      ]
+    }
+  ],
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "default": "BetterMe Band:<br>The power of metrics",
+      "label": "Section title"
+    },
+    {
+      "type": "header",
+      "content": "Vertical paddings"
+    },
+    {
+      "type": "range",
+      "id": "margin_top",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "Margin top",
+      "default": 0
+    },
+    {
+      "type": "range",
+      "id": "margin_top_mobile",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "Margin top on mobile",
+      "default": 0
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "Padding Top",
+      "default": 36
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "Padding Bottom",
+      "default": 36
+    },
+    {
+      "type": "range",
+      "id": "padding_top_mobile",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "Padding Top on Mobile",
+      "default": 36
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom_mobile",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "Padding Bottom on Mobile",
+      "default": 36
+    }
+  ],
+  "presets": [
+    {
+      "name": "Product presentation",
+      "blocks": [
+        {
+        "type": "product-presentation"
+        },      
+        {
+          "type": "product-presentation"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}
